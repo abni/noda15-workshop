@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NODA15 - session</title>
+    <link rel="stylesheet" type="text/css" href="c3.min.css" />
+    <style>
+        body{
+            margin:0;
+        }
+        #chart div {
+            font-family: helvetica;
+            font-size: 11px;
+            min-height: 33px;
+            line-height: 33px;
+            background-color: steelblue;
+            padding: 3px;
+            margin: 1px;
+            color: white;
+        }
+        #chart div.df{
+            background-color:black;
+        }
+        #chart div.socialdemokratiet{
+            background-color:red;
+        }
+        #chart div.venstre{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<div id="chart"></div>
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="scripts/script-final.js"></script>
+<!-- // https://spreadsheets.google.com/feeds/list/{{spreadsheet-id}}/{{sheet-id}}/public/values?alt=json-in-script&callback=JSON_CALLBACK -->
+<script src='https://spreadsheets.google.com/feeds/list/1cZosRxqTdpK5eBGUjLDpEPN4zIK8jF-W-TQK_c9bv28/default/public/values?alt=json-in-script&callback=loadData'></script>
+</body>
+</html>
