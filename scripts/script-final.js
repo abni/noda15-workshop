@@ -1,6 +1,6 @@
 'use strict';
 
-// We will load data with JSONP
+// We will load data through JSONP and this callback function
 function loadData(googleSpreadSheetData) {
     var data = parse(googleSpreadSheetData);
 
@@ -46,7 +46,7 @@ function createC3Chart(data) {
     });
 }
 
-// This script parses the data from the google spreadsheet
+// This function parses data from a google spreadsheet
 // @RF Gist: https://gist.github.com/avector/19d4594a0430205613fb
 function parse(response){
     var i,
