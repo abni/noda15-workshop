@@ -5,7 +5,7 @@ function loadData(googleSpreadSheetData) {
     var data = parse(googleSpreadSheetData);
 
     createD3Chart(data);
-    // createC3Chart(data);
+    //createC3Chart(data);
 }
 
 function createD3Chart(data) {
@@ -13,12 +13,12 @@ function createD3Chart(data) {
         .domain([0, d3.max(data, function(d){ return +d.value; })]) // input data, data space
         .range([0, window.innerWidth - 20]) // output data, space
 
-    d3.select('#chart')
+    d3.select('#d3chart')
         .selectAll('div')
         .data(data.sort(function(a,b) { return b.value - a.value; } ))
         .enter().append('div')
-        .style('width', function(d){ return x(d.value) + 'px'})
-        .text(function(d) { return d.name + ' - ' + d.value})
+        .style('width', function(d){ return x(d.value) + 'px'; })
+        .text(function(d) { return d.name + ' - ' + d.value; })
         .attr('class', function(d){ return d.party.toLowerCase() });
 }
 

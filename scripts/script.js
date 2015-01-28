@@ -3,12 +3,11 @@
 // We will load data through JSONP and this callback function
 function loadData(googleSpreadSheetData) {
     var data = parse(googleSpreadSheetData);
-    console.log(data);
 }
 
 // This function parses data from a google spreadsheet
 // @RF Gist: https://gist.github.com/avector/19d4594a0430205613fb
-function parse(response){
+function parse(response) {
     var i,
     row,
     newRow,

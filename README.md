@@ -29,4 +29,4 @@ Please make a copy of the speadsheet in you own account.
 # Technology:
 - D3js and C3
 - Google Spreadsheet (you will need a Google account)
-- We *might* need a server. In that case we can spin up a simple HTTP-server: `python -m SimpleHTTPServer 8080`
+- We could use a server. In that case we can spin up a simple HTTP-server: `python -m SimpleHTTPServer 8080`

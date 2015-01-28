@@ -3,12 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>NODA15 - D3 Workshop</title>
+    <style>
+        body{
+            margin:0;
+        }
+        #d3chart div {
+            font-family: helvetica;
+            font-size: 11px;
+            min-height: 33px;
+            line-height: 33px;
+            background-color: steelblue;
+            padding-left:4px;
+            margin: 1px;
+            color: white;
+        }
+        #d3chart div.df{
+            background-color:black;
+        }
+        #d3chart div.socialdemokratiet{
+            background-color:#B60000;
+        }
+        #d3chart div.venstre{
+            background-color: #007DBD;
+        }
+    </style>
+    <link rel="stylesheet" href="c3.min.css">
 </head>
 <body>
 
 <div id="d3chart"></div>
+<!-- <div id="c3chart"></div> -->
 
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<!-- <script src="scripts/c3.min.js" charset="utf-8"></script> -->
 <script src="scripts/script.js"></script>
 <!-- // https://spreadsheets.google.com/feeds/list/{{spreadsheet-id}}/default/public/values?alt=json-in-script&callback=JSON_CALLBACK -->
 <script src='https://spreadsheets.google.com/feeds/list/1cZosRxqTdpK5eBGUjLDpEPN4zIK8jF-W-TQK_c9bv28/1/public/values?alt=json-in-script&callback=loadData'></script>
