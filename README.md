@@ -21,10 +21,16 @@ http://c3js.org/
 
 # The data
 You can find our sample data in this Google Spreadsheet:
-SOME URL
+https://docs.google.com/spreadsheets/d/1cZosRxqTdpK5eBGUjLDpEPN4zIK8jF-W-TQK_c9bv28/edit#gid=0
 
-Please make a copy of the speadsheet in you own account.
+Here is the data in XML:
+https://spreadsheets.google.com/feeds/list/1cZosRxqTdpK5eBGUjLDpEPN4zIK8jF-W-TQK_c9bv28/1/public/values
 
+Here is the data in JSON:
+https://spreadsheets.google.com/feeds/list/1cZosRxqTdpK5eBGUjLDpEPN4zIK8jF-W-TQK_c9bv28/1/public/values?alt=json-in-script
+
+
+Feel free to make a copy of the speadsheet and import it into your own account.
 
 # Technology:
 - D3js and C3
